@@ -79,7 +79,7 @@ pip install torch torchvision simpleitk pandas numpy matplotlib streamlit tqdm
 
 3. Preprocessing and Training :
 
-For the Dataset, (Subset folder) ; Download LUNA16 CTScan Dataset. Run the appropriate files correctly. (SimpleCNN / ResNet / TransUNet)
+* For the Dataset, (Subset folder) ; Download LUNA16 CTScan Dataset. Run the appropriate files correctly. (SimpleCNN / ResNet / TransUNet)
 
 4. Launching the UI :
 
