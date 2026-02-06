@@ -51,15 +51,38 @@ The project features a **High-Tech Diagnostic UI** built with Streamlit.
 
 ---
 
-## 📂 Project Directory Structure
+## 📂 Project Directory Structure (TransUNet focused)
 ```bash
 ├── Common CSV files/        # candidates_V2.csv (Ground Truth Coordinates)
-├── Subsets/                 # Original .mhd/.raw CT Volume files
-├── TransUNet_Preprocessed_Data/ # Specialized 64x64x64 voxel patches
+├── Subsets/                 # Original .mhd/.raw CT Volume files (Shelved in .gitignore due to filesize (160+ gb))
+├── TransUNet_Preprocessed_Data/ # Specialized 64x64x64 voxel patches (Shelved in .gitignore due to Github upload size limit)
 ├── Results_Export/          # Auto-saved diagnostic reports
 ├── TransUNet_model.py       # Ultimate Architecture & Hybrid Loss logic
 ├── TransUNet_evaluation.py  # Synchronized metrics & confusion matrices
-├── TransUNet_App.py         # Streamlit Diagnostic UI
+├── app.py         # Streamlit Diagnostic UI
 └── transunet_ULTIMATE_best.pth # Optimized model weights
 ```
 
+---
+
+## 🚀 Execution Guide
+
+1. Virtual Environment setup :
+```bash
+py -3.12 -m venv venv
+```
+
+2. Required Libraries :
+```bash
+pip install torch torchvision simpleitk pandas numpy matplotlib streamlit tqdm
+```
+
+3. Preprocessing and Training :
+
+For the Dataset, (Subset folder) ; Download LUNA16 CTScan Dataset. Run the appropriate files correctly. (SimpleCNN / ResNet / TransUNet)
+
+4. Launching the UI :
+
+```bash
+streamlit run app.py
+```
