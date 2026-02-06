@@ -1,0 +1,10 @@
+__pycache__/
+ResNet_Preprocessed_Data/
+SimpleCNN_Preprocessed_Data/
+Subsets/
+TransUNet_Preprocessed_Data/
+venv/
+resnet_multitask_best.pth
+simpleCNN_unet_best.pth
+transunet_multitask_best.pth
+.groupedtimelineinclude

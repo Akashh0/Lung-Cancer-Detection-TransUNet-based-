@@ -1,0 +1,16 @@
+# Data Manipulation and Utilities
+numpy
+pandas
+tqdm
+scikit-learn
+
+# Medical Imaging
+SimpleITK
+
+# Deep Learning (PyTorch)
+torch
+torchvision
+torchaudio
+# Visualization
+matplotlib
+seaborn
